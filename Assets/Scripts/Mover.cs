@@ -8,10 +8,15 @@ public class Mover : MonoBehaviour
     float yValue = 0.01f;
 
     [SerializeField]
-    float moveSpeed = 15f;
+    float moveSpeed = 100f;
+    [SerializeField]
+    Rigidbody _rigidbody;
+   
 
     void Start()
     {
+        _rigidbody = GetComponent<Rigidbody>();
+        
     }
 
     void Update()
@@ -20,9 +25,8 @@ public class Mover : MonoBehaviour
     }
 
     void MovePlayer()
-    {
-        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        transform.Translate (xValue, yValue, zValue);
+    {        
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), yValue, Input.GetAxis("Vertical"));
+        transform.position += move * Time.deltaTime * moveSpeed;
     }
 }
