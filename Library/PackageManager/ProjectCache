@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638064455515144928
-    m_Hash: 553452954
+      ticks: 638079274521379457
+    m_Hash: 229531808
   m_LockFileStatus:
     m_FilePath: D:/Projects/Unity-Projects/Obstacle-Course/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638064455515174934
-    m_Hash: 2382497382
+      ticks: 638079274521379457
+    m_Hash: 1234843617
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -879,12 +879,14 @@ m_PackageAssets:
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
         - 4.0.0-pre.1
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
